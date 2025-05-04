@@ -1,8 +1,5 @@
 import React, { useEffect } from 'react';
 
-// @ts-expect-error: No types for @splinetool/viewer, this is a client-only import
-import('@splinetool/viewer');
-
 export default function SplineViewer() {
   useEffect(() => {
     // @ts-expect-error: No types for @splinetool/viewer

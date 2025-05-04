@@ -4,6 +4,7 @@ import { Header } from '@/components/layout/Header'
 import Link from 'next/link'
 import { CheckCircle2 } from 'lucide-react'
 import { motion } from 'framer-motion'
+import dynamic from 'next/dynamic'
 
 const features = [
   {
@@ -24,6 +25,8 @@ const features = [
   },
 ]
 
+const SplineViewer = dynamic(() => import('./SplineViewer'), { ssr: false })
+
 export default function Home() {
   return (
     <div className="bg-white">
@@ -33,8 +36,7 @@ export default function Home() {
         {/* Hero section with 3D Spline and animation */}
         <div className="relative isolate pt-14 flex flex-col items-center justify-center">
           <div className="w-full max-w-3xl mx-auto aspect-[16/9] mb-8 rounded-2xl overflow-hidden shadow-xl">
-            {/* @ts-expect-error Spline viewer is a custom element */}
-            <spline-viewer url="https://prod.spline.design/UWoeqiir20o49Dah/scene.splinecode"></spline-viewer>
+            <SplineViewer />
           </div>
           <motion.div
             initial={{ opacity: 0, y: 40 }}

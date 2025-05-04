@@ -1,5 +1,5 @@
 import { Header } from '@/components/layout/Header'
-import { ArrowRight, BarChart3, Clock, Lock, Users, Zap } from 'lucide-react'
+import { BarChart3, Clock, Lock, Users, Zap } from 'lucide-react'
 import Link from 'next/link'
 
 const features = [
@@ -54,7 +54,7 @@ export default function FeaturesPage() {
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Our platform provides all the tools you need to manage and grow your business effectively.
-              From analytics to automation, we've got you covered.
+              From analytics to automation, we&apos;ve got you covered.
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">

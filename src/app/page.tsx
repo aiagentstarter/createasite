@@ -2,7 +2,7 @@
 
 import { Header } from '@/components/layout/Header'
 import Link from 'next/link'
-import { ArrowRight, CheckCircle2 } from 'lucide-react'
+import { CheckCircle2 } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 const features = [
@@ -33,7 +33,7 @@ export default function Home() {
         {/* Hero section with 3D Spline and animation */}
         <div className="relative isolate pt-14 flex flex-col items-center justify-center">
           <div className="w-full max-w-3xl mx-auto aspect-[16/9] mb-8 rounded-2xl overflow-hidden shadow-xl">
-            {/* @ts-ignore */}
+            {/* @ts-expect-error */}
             <spline-viewer url="https://prod.spline.design/UWoeqiir20o49Dah/scene.splinecode"></spline-viewer>
           </div>
           <motion.div

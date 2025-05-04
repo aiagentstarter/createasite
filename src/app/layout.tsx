@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <head>
-        <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+        {/* Removed synchronous <script> tag */}
       </head>
       <body className={`${inter.className} h-full`}>
         {children}

@@ -1,6 +1,6 @@
 import { Header } from '@/components/layout/Header'
 import Link from 'next/link'
-import { ArrowRight, CheckCircle2 } from 'lucide-react'
+import { CheckCircle2 } from 'lucide-react'
 
 const features = [
   {
